@@ -1,0 +1,17 @@
+<% provide(:title, 'Images') %>
+<h1>Images</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@image) do |f| %>
+
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+
+      <%= f.label :total_pages %>
+      <%= f.text_field :total_pages %>
+
+      <%= f.submit "Display", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
